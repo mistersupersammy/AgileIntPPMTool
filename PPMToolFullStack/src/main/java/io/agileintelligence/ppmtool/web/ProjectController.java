@@ -45,17 +45,10 @@ public class ProjectController {
 
         return new ResponseEntity<Project>(project, HttpStatus.OK);
     }
-<<<<<<< HEAD
 
 
     @GetMapping("/all")
     public Iterable<Project> getAllProjects(){return projectService.findAllProjects();}
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> branch9
-=======
 
 
     @DeleteMapping("/{projectId}")
@@ -65,7 +58,3 @@ public class ProjectController {
         return new ResponseEntity<String>("Project with ID: '"+projectId+"' was deleted", HttpStatus.OK);
     }
 }
-<<<<<<< HEAD
->>>>>>> branch10
-=======
->>>>>>> branch10
